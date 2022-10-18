@@ -1,10 +1,30 @@
 import "../style/me.scss";
 import Header from "../components/header";
 import { useState } from "react";
+import htmlLogo from "../img/html-5.png";
+import cssLogo from "../img/css-3.png";
+import sassLogo from "../img/sass.png";
+import jsLogo from "../img/js.png";
+import reactLogo from "../img/react.png";
+import nodeLogo from "../img/nodejs.png";
+import gitLogo from "../img/github2.png";
+import dataLogo from "../img/database.png";
 
 function Me() {
   const [hard, setIsHard] = useState(false);
   const [soft, setIsSoft] = useState(false);
+  const images = [
+    htmlLogo,
+    cssLogo,
+    sassLogo,
+    jsLogo,
+    reactLogo,
+    nodeLogo,
+    gitLogo,
+    dataLogo,
+  ];
+
+  let counter = 0;
 
   return (
     <div className="big_wrapper">
@@ -12,42 +32,32 @@ function Me() {
       <div className="page_wrapper">
         <div className="skills_wrapper">
           <div className="skills" onClick={() => setIsHard(!hard)}>
-            {hard ? (
-              <>
-                <h2 className="skills_title">Hard Skills</h2>
-                <ul>
-                  <li>PAO</li>
-                  <li>Gestion de projet</li>
-                  <li>Développement</li>
-                  <li>Conception</li>
-                </ul>
-              </>
-            ) : (
-              <div className="skills">
-                <h2 className="skills_title">Hard Skills</h2>
-              </div>
-            )}
+            <h2 className="skills_title">Hard Skills</h2>
           </div>
+          {hard && (
+            <>
+              <ul>
+                <li>PAO</li>
+                <li>Gestion de projet</li>
+                <li>Développement</li>
+                <li>Conception</li>
+              </ul>
+            </>
+          )}
 
           <div className="skills" onClick={() => setIsSoft(!soft)}>
-            {soft ? (
-              <>
-                <h2 className="skills_title">Soft Skills</h2>
-                <ul>
-                  <li>Implication</li>
-                  <li>Détermination</li>
-                  <li>Réalisme</li>
-                  <li>Tolérance</li>
-                </ul>
-              </>
-            ) : (
-              <>
-                <div className="skills">
-                  <h2 className="skills_title">Soft Skills</h2>
-                </div>
-              </>
-            )}
+            <h2 className="skills_title">Soft Skills</h2>
           </div>
+          {soft && (
+            <>
+              <ul>
+                <li>Implication</li>
+                <li>Détermination</li>
+                <li>Réalisme</li>
+                <li>Tolérance</li>
+              </ul>
+            </>
+          )}
         </div>
         <div className="container_one">
           <div className="circle"></div>
@@ -64,6 +74,22 @@ function Me() {
             graphique et mon métier de développeur peut faire un beau mélange.
           </p>
         </div>
+      </div>
+      <div className="all_stacks">
+        {images.map((image, i) => (
+          <div
+            className="prog"
+            key={i}
+            style={{
+              backgroundImage: `url(${image})`,
+              "--order": `${counter++}`,
+              width: "50px",
+              height: "50px",
+              borderRadius: "50%",
+              backgroundSize: "contain",
+            }}
+          ></div>
+        ))}
       </div>
     </div>
   );

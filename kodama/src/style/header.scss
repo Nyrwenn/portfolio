@@ -16,11 +16,49 @@ nav{
     margin-top: 20px;
 }
 
+
+
 .links{
     text-decoration: none;
-    color: white;
+    position: relative;
+    background: linear-gradient(to right, #8675a9, #9d80b0, #b38cb7, #c699be, #d9a7c5, #e3afc7, #edb8ca, #f5c1cd, #f9c6cc, #fbcbcc, #fed0cc, #ffd5cd);
+    background-clip: text;
+    color: transparent;
     font-family: 'Lora';
     font-weight: 500;
     font-size: 18px;
-    
+    padding: 8px;
+    z-index: 1;
+    transition: opacity 0.6s linear;
+
+    &:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right top, #8675a9, #9d80b0, #b38cb7, #c699be, #d9a7c5, #e3afc7, #edb8ca, #f5c1cd, #f9c6cc, #fbcbcc, #fed0cc, #ffd5cd);
+    color: black;
+    z-index: -1;
+    transition: opacity 0.6s linear;
+    opacity: 0;
+    border-radius: 3px;
+    }
+
+    &:hover:before{
+        opacity: 1;
+        border-radius: 3px;
+        transition: opacity 0.6s linear;        
+    }
+
+    &:hover{
+        color:black;
+        border-radius: 3px;
+        z-index: 1;
+        
+    }
+
+  
+   
 }

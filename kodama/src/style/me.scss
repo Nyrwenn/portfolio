@@ -50,22 +50,68 @@
 
 .skills_wrapper{
     width: 20%;
-    margin-top: 14%;
-    
+    margin-top: 16%;
+    height: 120px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-left: 20px;   
 }
+
 
 .skills{
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    flex-direction: column; 
     align-items: center;
+    justify-content: center;
+    z-index: 0;
+    transition: 1s;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 20px;
+    font-family: "Lora";
+   
 }
+  
+  .skills::before, .skills::after {
+    position: absolute;
+    background: #080808;
+    z-index: -1;
+    transition: 1s;
+    content: '';
+  }
+  
+  .skills::before {
+    height: 50px;
+    width: 130px;
+  
+  }
+  
+  .skills::after {
+    width: 150px;
+    height: 30px;
+   
+  }
+  
+  .skills:hover::before {
+    width: 0px;
+   
+  }
+  
+  .skills:hover::after {
+    height: 0px;
+   
+  }
 
 .skills_title{
-    color: #F4F4F4;
+    background: linear-gradient(to right, #8675a9, #9d80b0, #b38cb7, #c699be, #d9a7c5, #e3afc7, #edb8ca, #f5c1cd, #f9c6cc, #fbcbcc, #fed0cc, #ffd5cd);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: "Lora";
     cursor: pointer;
 }
@@ -83,3 +129,59 @@ li{
     text-decoration: none;
     font-weight: 500;
 }
+
+.all_stacks{
+  width: 97%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex; 
+  justify-content: space-between;
+}
+
+.prog{
+  opacity: 0;
+  animation: progApp ease-in-out 1.5s forwards;
+  // animation: progApp .5s cubic-bezier(0.5, 0.5,0.4,1.2) forwards;
+  animation-delay: calc(var(--order)* 200ms);
+  transform: translateX(-100%);
+ 
+}
+
+@keyframes progApp {
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// .prog{
+//   display: block;
+//   animation: progApp .5s cubic-bezier(0.5, 0.5,0.4,1.2);
+//   animation-delay: calc(var(order)*2s);
+
+// }
+
+// @keyframes progApp {
+//   from {
+//     opacity: 0;
+//     transform: translateX();
+//   }
+//   to{
+//     opacity: 1;
+//     transform: translateX(50%);
+//   }
+// }
+
+// @for $i from 1 through length{
+//   .prog#{i}{
+//     animation: progApp ease-in-out 2s;
+//   }
+
+// }
+
+
+
+
+
+
