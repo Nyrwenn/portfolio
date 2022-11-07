@@ -1,9 +1,19 @@
 import "../style/header.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import kodama from "../images/logo-kodama-2-png-white.png";
 
-function Header() {
+function Header(props) {
+  const { isHomePage } = props;
   return (
     <div className="header_wrapper">
+      <Link to="/">
+        <img
+          src={kodama}
+          alt="logo Kodama"
+          className="mini_logo"
+          style={{ display: isHomePage ? "none" : "block" }}
+        />
+      </Link>
       <header>
         <nav>
           <NavLink className="links" to="/portfolio">

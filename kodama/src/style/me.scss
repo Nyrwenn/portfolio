@@ -22,7 +22,7 @@
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    background-image: url('../profilepict.jpg');
+    background-image: url('../images/profilepict.jpg');
     background-size: cover;
     background-position: 3px, bottom;
     float: left;
@@ -155,30 +155,7 @@ li{
   }
 }
 
-// .prog{
-//   display: block;
-//   animation: progApp .5s cubic-bezier(0.5, 0.5,0.4,1.2);
-//   animation-delay: calc(var(order)*2s);
 
-// }
-
-// @keyframes progApp {
-//   from {
-//     opacity: 0;
-//     transform: translateX();
-//   }
-//   to{
-//     opacity: 1;
-//     transform: translateX(50%);
-//   }
-// }
-
-// @for $i from 1 through length{
-//   .prog#{i}{
-//     animation: progApp ease-in-out 2s;
-//   }
-
-// }
 
 
 
