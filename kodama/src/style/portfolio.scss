@@ -1,17 +1,19 @@
 .portfolio_wrapper{
     background: #080808;
     max-width: 100vw;
-    min-height: 100vh;
+    min-height: 200vh;
     font-family: "Lora";
 }
 
 .cards_wrapper{
     background: red;
-    width: 70%;
+    width: 85%;
     height: 400px;
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto; 
     margin-right: auto;
     margin-top: 50px;
+    justify-content: space-around;
 }
 

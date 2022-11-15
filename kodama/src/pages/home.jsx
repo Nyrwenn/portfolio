@@ -1,4 +1,4 @@
-import logo from "../images/logo-kodama-2-png-white.png";
+import logo from "../img/logo-kodama-2-png-white.png";
 import "../style/home.scss";
 import Header from "../components/header";
 

@@ -1,6 +1,6 @@
 import "../style/header.scss";
 import { NavLink, Link } from "react-router-dom";
-import kodama from "../images/logo-kodama-2-png-white.png";
+import kodama from "../img/logo-kodama-2-png-white.png";
 
 function Header(props) {
   const { isHomePage } = props;
