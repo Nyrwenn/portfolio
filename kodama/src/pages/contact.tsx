@@ -4,11 +4,11 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
-  const [name, setName] = useState();
-  const [firstName, setFirstName] = useState();
-  const [email, setEmail] = useState();
-  const [object, setObject] = useState();
-  const [message, setMessage] = useState();
+  const [name, setName] = useState<string>();
+  const [firstName, setFirstName] = useState<string>();
+  const [email, setEmail] = useState<string>();
+  const [object, setObject] = useState<string>();
+  const [message, setMessage] = useState<string>();
 
   const form = useRef();
 

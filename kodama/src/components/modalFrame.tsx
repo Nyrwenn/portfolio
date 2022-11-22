@@ -1,6 +1,13 @@
 import "../style/modalFrame.scss";
+import { Project } from "../Types/types";
 
-function ModalFrame(props) {
+interface Props {
+  show: boolean;
+  close: any;
+  project: Project;
+}
+
+function ModalFrame(props: Props) {
   const { show, close, project } = props;
 
   if (!show) {

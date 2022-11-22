@@ -1,9 +1,16 @@
 import "../style/card.scss";
 import { useState } from "react";
+import { Project } from "../Types/types";
 
-function Card(props) {
+interface Props {
+  show: any;
+  showFrame: boolean;
+  project: Project;
+}
+
+function Card(props: Props) {
   const { show, showFrame, project } = props;
-  const [showMore, setShowMore] = useState(false);
+  const [showMore, setShowMore] = useState<boolean>(false);
 
   return (
     <div className="card" style={{ display: showFrame ? "none" : "flex" }}>

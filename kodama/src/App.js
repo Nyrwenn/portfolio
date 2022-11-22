@@ -1,6 +1,6 @@
-import Home from "./pages/home.jsx";
+import Home from "./pages/home";
 import { Routes, Route } from "react-router-dom";
-import Me from "./pages/me.jsx";
+import Me from "./pages/me";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 

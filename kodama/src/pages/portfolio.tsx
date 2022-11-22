@@ -6,7 +6,7 @@ import ModalFrame from "../components/modalFrame";
 import { projects } from "../projects.js";
 
 function Portfolio() {
-  const [showFrame, setShowFrame] = useState(false);
+  const [showFrame, setShowFrame] = useState<boolean>(false);
 
   const handleToggleFrame = () => {
     setShowFrame(!showFrame);

@@ -2,7 +2,11 @@ import "../style/header.scss";
 import { NavLink, Link } from "react-router-dom";
 import kodama from "../img/logo-kodama-2-png-white.png";
 
-function Header(props) {
+interface Props {
+  isHomePage: boolean;
+}
+
+function Header(props: Props) {
   const { isHomePage } = props;
   return (
     <div className="header_wrapper">

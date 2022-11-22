@@ -3,7 +3,7 @@ import "../style/home.scss";
 import Header from "../components/header";
 
 function Home() {
-  const isHomePage = true;
+  const isHomePage: boolean = true;
   return (
     <div className="home_wrapper">
       <Header isHomePage={isHomePage} />

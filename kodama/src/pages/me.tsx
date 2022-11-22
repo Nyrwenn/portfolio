@@ -11,9 +11,9 @@ import gitLogo from "../img/github2.png";
 import dataLogo from "../img/database.png";
 
 function Me() {
-  const [hard, setIsHard] = useState(false);
-  const [soft, setIsSoft] = useState(false);
-  const images = [
+  const [hard, setIsHard] = useState<boolean>(false);
+  const [soft, setIsSoft] = useState<boolean>(false);
+  const images: string = [
     htmlLogo,
     cssLogo,
     sassLogo,
@@ -24,7 +24,7 @@ function Me() {
     dataLogo,
   ];
 
-  let counter = 0;
+  let counter: number = 0;
 
   return (
     <div className="big_wrapper">
