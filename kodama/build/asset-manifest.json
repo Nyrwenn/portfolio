@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4e3ccf24.css",
+    "main.js": "/static/js/main.df2d235e.js",
+    "static/js/787.c6f92854.chunk.js": "/static/js/787.c6f92854.chunk.js",
+    "static/media/profilepict.jpg": "/static/media/profilepict.c328969be0f8bc98b9dd.jpg",
+    "static/media/logo-kodama-2-png-white.png": "/static/media/logo-kodama-2-png-white.1e45a5c62a1e438b543f.png",
+    "static/media/react.png": "/static/media/react.35639ed930462bfcd544.png",
+    "static/media/github2.png": "/static/media/github2.8aeda8a8d91db4e7bd50.png",
+    "static/media/sass.png": "/static/media/sass.c5da83bb9ff45b84e0e7.png",
+    "static/media/nodejs.png": "/static/media/nodejs.007e99f68b718e476aba.png",
+    "static/media/database.png": "/static/media/database.8fa35626f701ea317473.png",
+    "static/media/html-5.png": "/static/media/html-5.cfb2ba4a6b1c3de295bc.png",
+    "static/media/css-3.png": "/static/media/css-3.4a6549b8c2b4cda8bb88.png",
+    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
+    "index.html": "/index.html",
+    "main.4e3ccf24.css.map": "/static/css/main.4e3ccf24.css.map",
+    "main.df2d235e.js.map": "/static/js/main.df2d235e.js.map",
+    "787.c6f92854.chunk.js.map": "/static/js/787.c6f92854.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e3ccf24.css",
+    "static/js/main.df2d235e.js"
+  ]
+}
